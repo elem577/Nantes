@@ -6,6 +6,8 @@
 //  Copyright © 2019 Instacart. All rights reserved.
 //
 
+import UIKit
+
 extension NSRange {
     init(range: CFRange) {
         self = NSRange(location: range.location == kCFNotFound ? NSNotFound : range.location, length: range.length)
