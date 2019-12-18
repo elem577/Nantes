@@ -5,7 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Nantes",
-    // Note: SPM requires 1 target to build the package
+    products: [
+        .library(name: "Nantes", targets: ["Nantes"])
+    ],
     targets: [
         .target(
             name: "Nantes",
